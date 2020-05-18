@@ -19,6 +19,7 @@
         case 'add':$Controller->addView();break;
         case 'update':$Controller->update();break;
         case 'delete':$Controller->delete();break;
+        case 'search':$Controller->search();break;
         default:$Controller->listView();break;
     }
 ?>

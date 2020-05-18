@@ -35,4 +35,9 @@ class DBProduct
         return $stmt->fetch();
 
     }
+    public function search($id){
+        $sql = "SELECT * FROM `product` WHERE name LIKE '%$id%'";
+        $stmt = $this->connection->query($sql);
+        return $stmt->fetchAll();
+    }
 }

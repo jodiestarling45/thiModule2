@@ -48,19 +48,19 @@
         </thead>
         <tbody>
         <?php foreach ($productNumber as $key => $product):?>
-        <tr>
-            <td><?php echo $key++ ?></td>
-            <td><?php echo $product['name']?></td>
-            <td><?php echo $product['type']?></td>
-            <td><?php echo $product['price']?></td>
-            <td><?php echo $product['number']?></td>
-            <td><?php echo $product['date']?></td>
-            <td><?php echo $product['content']?></td>
-            <td>
-                <p><a href="index.php?page=update&id=<?php echo $product['id']?>"><button type="button" class="btn btn-dark"><i class="fa fa-folder"></i>update</button></a></p>
-                <p><a href="index.php?page=delete&id=<?php echo $product['id']?>"><button type="button" class="btn btn-dark"><i class="fa fa-trash"></i>delete</button></a></p>
-            </td>
-        </tr>
+            <tr>
+                <td><?php echo $key++ ?></td>
+                <td><?php echo $product['name']?></td>
+                <td><?php echo $product['type']?></td>
+                <td><?php echo $product['price']?></td>
+                <td><?php echo $product['number']?></td>
+                <td><?php echo $product['date']?></td>
+                <td><?php echo $product['content']?></td>
+                <td>
+                    <p><a href="index.php?page=update&id=<?php echo $product['id']?>"><button type="button" class="btn btn-dark"><i class="fa fa-folder"></i>update</button></a></p>
+                    <p><a href="index.php?page=delete&id=<?php echo $product['id']?>"><button type="button" class="btn btn-dark"><i class="fa fa-trash"></i>delete</button></a></p>
+                </td>
+            </tr>
         <?php endforeach;?>
         </tbody>
     </table>

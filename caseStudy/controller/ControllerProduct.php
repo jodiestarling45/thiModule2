@@ -39,4 +39,8 @@ class ControllerProduct
         $this->DBProduct->delete($id);
         header('location: index.php?page=');
     }
+    public function search(){
+        $productNumber = $this->DBProduct->search($_REQUEST['key']);
+        include 'view/search.php';
+    }
 }
